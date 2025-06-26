@@ -236,6 +236,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -589,6 +775,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 45.72) (xy 127 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2456f4c-0b7e-4f11-88ed-dbd0f5baf5ad")
+	)
+	(wire
+		(pts
 			(xy 48.26 50.8) (xy 50.8 50.8)
 		)
 		(stroke
@@ -881,7 +1077,7 @@
 	)
 	(global_label "DPAD_GND"
 		(shape input)
-		(at 127 38.1 270)
+		(at 127 48.26 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -893,7 +1089,7 @@
 		)
 		(uuid "cf26c245-f03e-4955-a311-ef6f4e1e64e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127 50.6437 90)
+			(at 127 60.8037 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,7 +1173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "buttons_custom:gba_sp_buttons"
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 55.88 20.32 0)
 			(effects
 				(font
@@ -1110,7 +1306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "buttons_custom:gba_sp_buttons"
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 55.88 45.72 0)
 			(effects
 				(font
@@ -1177,7 +1373,7 @@
 				)
 			)
 		)
-		(property "Footprint" "buttons_custom:gba_sp_buttons"
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 43.18 33.02 0)
 			(effects
 				(font
@@ -1244,7 +1440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "buttons_custom:gba_sp_buttons"
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 68.58 33.02 0)
 			(effects
 				(font
@@ -1778,7 +1974,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom_connectors:2mm_test_point_smd"
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
 			(at 134.62 27.94 0)
 			(effects
 				(font
@@ -1844,7 +2040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ndsl_clicky_buttons:TestPoint_THTPad_D1.5mm_Drill1.0mm"
 			(at 157.48 25.4 0)
 			(effects
 				(font
@@ -1884,6 +2080,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 127 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e21860a-76c2-4bdb-beeb-6a6b9a04947d")
+		(property "Reference" "JP1"
+			(at 129.54 40.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SCREEN BYPASS"
+			(at 129.54 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 127 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 127 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94101253-c7e2-4208-a916-4cc5d74fde50")
+		)
+		(pin "2"
+			(uuid "d049c31c-b82f-44f4-b849-664e384efe9f")
+		)
+		(instances
+			(project ""
+				(path "/2de16c95-9e2c-4937-bd2d-06213c9bc92f"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 44.45 88.9 0)
 		(unit 1)
@@ -1909,7 +2175,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 44.45 83.82 0)
 			(effects
 				(font
@@ -1977,7 +2243,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 57.15 71.12 0)
 			(effects
 				(font
@@ -2045,7 +2311,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 57.15 96.52 0)
 			(effects
 				(font
@@ -2113,7 +2379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ndsl_clicky_buttons:ALPS_SKRR"
 			(at 69.85 83.82 0)
 			(effects
 				(font
